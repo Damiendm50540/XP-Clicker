@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container text-center">
+        <h1 class="my-4">XP Clicker</h1>
+        
+        <button id="reset-button" class="reset-button">Reset</button>
+        
+        <img id="cookie-image" src="image/XP.png" alt="XP Image" class="XP" draggable="false" onclick="spawnMiniCookie(event)">
+        
+        <div id="score" class="h5">XP: 0</div>
+        
+        <div class="button-container">
+            <img id="upgrade-button" src="image/livre_enchanter.png" alt="Acheter une Fortune" draggable="false">
+            <span id="upgrade-price">10 XP</span>
+        </div>
+        <div id="upgrade-message" class="my-2"></div>
+        
+        <div class="button-container">
+            <img id="auto-clicker-button" src="image/livre_enchanter.png" alt="Acheter un Mending" draggable="false">
+            <span id="auto-clicker-price">20 XP</span>
+        </div>
+        <div id="auto-clicker-info" class="my-2"></div>
+
+        <div id="error-popup" class="popup">
+            <img src="image/bottle Xp.png" alt="Erreur" class="error-image" draggable="false">
+            <p id="error-message">Pas assez d'XP !</p>
+        </div>
+
+        <div id="timer" class="timer"></div>
+    </div>
+</body>
+</html>
